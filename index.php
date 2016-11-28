@@ -82,7 +82,7 @@ echo "<h1>10.00 - 18.00</h1>";
     ?>
 
         <div class="ribbon">
-            <a href="https://github.com/jontek2/stockholm-oppettider">Fork me on GitHub</a>
+            <a href="https://github.com/jontek2/stockholm-oppettider">Get me on GitHub</a>
         </div>
         
       
