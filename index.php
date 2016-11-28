@@ -53,39 +53,18 @@
         </style>
     </head>
     <body>
-       <?php
-
-     $day = date('D');
-if($day == Mon){
-echo "<h1>10.00 - 20.00</h1>";
-}
-elseif($day == Tue){
- echo "<h1>10.00 - 20.00</h1>";
-}
-elseif($day == Wed){
-echo "<h1>10.00 - 20.00</h1>";
-}
-elseif($day == Thu){
-echo "<h1>10.00 - 20.00</h1>";
-}
-elseif($day == Fri){
-echo "<h1>10.00 - 20.00</h1>";
-}
-elseif($day == Sat){
- echo "<h1>10.00 - 18.00</h1>";
-}
-elseif($day == Sun){
-echo "<h1>10.00 - 18.00</h1>";
-}
-
-
-    ?>
+        <?php
+            $day = date('D');
+            $opening_hours = '10.00 - 20.00';
+            
+            if($day == 'Sat' || $day == 'Sun') {
+                $opening_hours = '10.00 - 18.00';
+            }
+        ?>
+        <h1><?php echo $opening_hours; ?></h1>
 
         <div class="ribbon">
             <a href="https://github.com/jontek2/stockholm-oppettider">Get me on GitHub</a>
         </div>
-        
-      
-
     </body>
 </html>
